@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花店特賣專區</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #fff7f3;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2em;
+            color: #e86b6b;
+            margin-bottom: 20px;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            width: calc(33.333% - 20px);
+            min-width: 250px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-card h3 {
+            margin: 15px 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .product-card p {
+            font-size: 1em;
+            margin: 10px 15px;
+            color: #666;
+        }
+
+        .product-card .price {
+            font-size: 1.2em;
+            color: #e86b6b;
+            margin-bottom: 15px;
+        }
+
+        .product-card button {
+            background-color: #e86b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-bottom: 15px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .product-card button:hover {
+            background-color: #c05a5a;
+        }
+
+        .testimonials {
+            background: #ffe5e2;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .testimonials h2 {
+            color: #e86b6b;
+            margin-bottom: 20px;
+        }
+
+        .testimonials p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta-section h2 {
+            font-size: 2em;
+            color: #e86b6b;
+            margin-bottom: 20px;
+        }
+
+        .cta-section button {
+            background-color: #e86b6b;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .cta-section button:hover {
+            background-color: #c05a5a;
+        }
+
+        @media (max-width: 768px) {
+            .product-card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>限時特賣！精美花束優惠中</h1>
+        <p>讓每一份心意，成為永恆的回憶</p>
+    </div>
+
+    <div class="main-content">
+        <div class="section-title">精選花束</div>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://example.com/product1.jpg" alt="花束 1">
+                <h3>玫瑰戀曲花束</h3>
+                <p>浪漫紅玫瑰，完美表達濃烈情感。</p>
+                <p class="price">NT$ 999</p>
+                <button>立即購買</button>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/product2.jpg" alt="花束 2">
+                <h3>春日花語</h3>
+                <p>多彩花卉組合，帶來春天般的喜悅。</p>
+                <p class="price">NT$ 899</p>
+                <button>立即購買</button>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/product3.jpg" alt="花束 3">
+                <h3>百合清香</h3>
+                <p>純潔百合，適合慶祝特別的日子。</p>
+                <p class="price">NT$ 1,299</p>
+                <button>立即購買</button>
+            </div>
+        </div>
+
+        <div class="testimonials">
+            <h2>顧客評價</h2>
+            <p>"收到的花束比照片更漂亮，真的很喜歡！" — <strong>Anna</strong></p>
+            <p>"服務很好，送貨也很準時，母親節選它就對了！" — <strong>Michael</strong></p>
+        </div>
+
+        <div class="cta-section">
+            <h2>心動了嗎？現在就選購吧！</h2>
+            <button>查看更多花束</button>
+        </div>
+    </div>
+</body>
+</html>
